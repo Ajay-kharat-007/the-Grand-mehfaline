@@ -16,7 +16,26 @@
   "profile": {
     "name": "typicode"
   },
-  "users" : [
-    
+  "users": [
+    {
+      "id": 1,
+      "name": "Tanaya Bagekar",
+      "age": 22,
+      "gender": "female",
+      "phone": 9996656595,
+      "email": "tanayabagekar31@gmail.com",
+      "username": "tanaya007",
+      "password": "Tanaya@123"
+    },
+    {
+      "id": 2,
+      "name": "Ajay Kharat",
+      "age": 20,
+      "gender": "male",
+      "phone": 8857822354,
+      "email": "kharatajay023@gmail.com",
+      "username": "Ajay007",
+      "password": "Ajey#123"
+    }
   ]
 }

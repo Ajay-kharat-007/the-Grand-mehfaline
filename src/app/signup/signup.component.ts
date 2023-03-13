@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { UsersDataService } from './users-data.service'
 
 @Component({
   selector: 'app-signup',
@@ -8,11 +8,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SignupComponent {
 
-  constructor(private http:HttpClient){
+  constructor(private userData: UsersDataService){
+    this.userData.users().subscribe((data)=>{
+      console.log(data)
+    })
   }
 
-  getVal(data: any) {
-    this.http.post('http://localhost:3000/users',data)
-    console.log(data)
+  mata:any;
+
+  getVal(data:any){
+    data.name = data.fname +" " + data.lname
+    delete data.fname;
+    delete data.lname;
+    this.mata = {...data, name: data.fname +" " + data.lname}
+    
+    console.log(typeof data)
+    this.userData.postUsers(data).subscribe((data)=>{
+      console.log(data)
+    })
   }
 }
