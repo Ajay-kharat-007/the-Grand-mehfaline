@@ -36,6 +36,9 @@ input[type=submit] {
     color: white;
     border-radius: 15px;
     font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 

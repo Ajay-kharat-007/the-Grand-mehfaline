@@ -115,6 +115,11 @@ button {
     background-color: green;
     font-size: 22px;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: black;
 }
 
 .login {
