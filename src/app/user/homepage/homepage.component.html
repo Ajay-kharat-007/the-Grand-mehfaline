@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="box" *ngFor="let item of hotels">
+        <h1 style="text-align: center;">{{item.name}}</h1>
+        <hr>
+        <p>Total rooms : {{item.trooms}}</p>
+        <p>Available rooms : {{item.arooms}}</p>
+        <p>Special Dish : {{item.sDish}}</p>
+        <p>Location : {{item.address}}</p>
+        <div>
+            <button>Book Hotel</button>
+        </div>
+    </div>
+</div>

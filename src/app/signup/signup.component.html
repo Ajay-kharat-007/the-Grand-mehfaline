@@ -1,55 +1,40 @@
 <div class="container">
-    <h1 style="margin: 10px;">SignUp Form</h1>
-    <p>Create your account for free !!</p>
-    <form #SignupForm="ngForm" autocomplete="off" (ngSubmit)="getVal(SignupForm.value)">
+    <div class="heading">
+        <h1>Registration Form</h1>
+    </div>
+    <form [formGroup]="signupForm" (ngSubmit)="signupUser()">
         <div>
-            First Name : 
-            <input type="text" name="fname" #fname='ngModel' placeholder="First Name" ngModel required>
-            <span class="validation" *ngIf="!fname.touched">Please Enter Your Name</span>
-          
-        </div>
-        <div>
-            Last Name : 
-            <input type="text" name="lname" #lname='ngModel' placeholder="Last Name" ngModel>
-            <span class="validation" *ngIf="!lname.touched">Please Enter Your Name</span>
-        </div>
-        <div >
-            Gender:
-            <input type="radio" name="gender" id="male" ngModel>Male
-            <input type="radio" name="gender" id="female" ngModel>Female
+            <input type="text" name="fname" [pattern]="'^[a-zA-Z]{2,15}$'" formControlName="fname" placeholder="first name">
+            <span [style.color]="'red'" [style.fontSize]="'22px'" *ngIf="fname && fname.touched && fname.invalid" >Please enter a valid name !!</span>
+            <input type="text" name="lname" [pattern]="'^[a-zA-Z]{2,15}$'" formControlName="lname" placeholder="last name">
+            <span [style.color]="'red'" [style.fontSize]="'22px'" *ngIf="lname && lname.touched && lname.invalid" >Please enter a valid name !!</span>
         </div>
         <div>
-            Date Of Birth:
-            <input type="date" name="date" id="date" ngModel>
+            <input type="text" name="phone" [pattern]="'^[0-9]{10,15}$'" formControlName="phone" placeholder="Enter phone number ">
+            <span [style.color]="'red'" [style.fontSize]="'22px'" *ngIf="phone && phone.touched && phone.invalid" >Please enter a valid number !!</span>
+            <input type="email" name="email" id="email" formControlName="email" placeholder="Enter email ">
+            <span [style.color]="'red'" [style.fontSize]="'22px'" *ngIf="email && email.touched && email.invalid" >Please enter a valid email !!</span>
         </div>
         <div>
-            Mo Number : 
-            <input type="text" name="phone" #phone='ngModel' placeholder="Phone Number"  pattern="[7-9]{1}[0-9]{9}" maxlength="10" minlength="10" ngModel>
-            <span class="validation" *ngIf="phone.errors?.['pattern'] && phone.touched && !phone.errors?.['minlength'] ">Enter Valid pattern</span>
-            <span class="validation" *ngIf="phone.errors?.['minlength'] && phone.touched" >Enter Valid Mobile Number</span>
-        </div>
-       
-        <div>
-            Email : 
-            <input type="text" name="email" placeholder="Email " #email='ngModel' ngModel pattern="[A-aZ-z]{8}[@]{1}" maxlength="20" >
-            <span class="validation" *ngIf="email.touched && !email.valid && email.errors?.['pattern'] && !email.errors?.['maxlength'] " >Enter Valid Email-Id</span>
-            <span class="validation" *ngIf="email.errors?.['maxlength'] && email.touched" >maxlength at least 20 characters</span>
+            <label for="gender">Gender : </label>
+            Male  <input type="radio" name="gender" formControlName="gender" value="male">
+            Female  <input type="radio" name="gender" formControlName="gender" value="female">
         </div>
         <div>
-            Username : 
-            <input type="text" name="username" placeholder="Username" ngModel>
+            <input type="text" name="user" [pattern]="'[a-zA-Z]{4,6}[0-9]{3,6}'" formControlName="username" placeholder="Enter username">
+            <span [style.color]="'red'" [style.fontSize]="'22px'" *ngIf="username && username.touched && username.invalid" >Please enter a valid username !!</span>
+            <input type="date" name="dob" formControlName="dob" placeholder="Enter your DOB">
+            <span [style.color]="'red'" [style.fontSize]="'22px'" *ngIf="dob && dob.touched && dob.invalid" >Please enter a valid DOB !!</span>
         </div>
         <div>
-            Password : 
-            <input type="password" name="password" placeholder="Password" ngModel>
+            <input type="password" formControlName="password" [pattern]="'[a-zA-Z0-9-@$#]{8,12}'" name="password" placeholder="Enter password">
+            <span [style.color]="'red'" [style.fontSize]="'22px'" *ngIf="password && password.touched && password.invalid" >Please enter a valid password !!</span>
+            <input type="confirm password" [pattern]="'[a-zA-Z0-9-@$#]{8,12}'" formControlName="cpassword" placeholder="confirm password">
+            <span [style.color]="'red'" [style.fontSize]="'22px'" *ngIf="cpassword && cpassword.touched && cpassword.invalid" >Please enter a valid password !!</span>
         </div>
         <div>
-            Confirm Password : 
-            <input type="text" name="password" placeholder="Confirm Password" ngModel>
-        </div>
-        <div style="display: flex;">
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <button type="submit" (click)="resetValue(res)" [disabled]="signupForm.invalid">Submit</button>
+            <button type="reset" #res>Reset</button>
         </div>
     </form>
 </div>

@@ -6,61 +6,743 @@
       "author": "typicode"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
   "users": [
     {
       "id": 1,
-      "name": "Tanaya Bagekar",
-      "age": 22,
-      "gender": "female",
+      "fullname": "Tanaya Bagekar",
       "phone": 9996656595,
+      "gender": "female",
+      "dob": "2000-12-31",
       "email": "tanayabagekar31@gmail.com",
       "username": "tanaya007",
       "password": "Tanaya@123"
     },
     {
       "id": 2,
-      "name": "Ajay Kharat",
-      "age": 20,
-      "gender": "male",
+      "fullname": "Ajay Kharat",
       "phone": 8857822354,
+      "gender": "male",
+      "dob": "2002-09-13",
       "email": "kharatajay023@gmail.com",
       "username": "Ajay007",
       "password": "Ajey#123"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Golden leaf",
+      "trooms": 200,
+      "arooms": 20,
+      "address": "Amaravati",
+      "sDish": "Dal makhani"
     },
     {
-      "phone": "7499269640",
-      "email": "bagekartanaya30@gmail.com",
-      "username": "Tanaya",
-      "password": "tanaya123",
-      "name": "tanaya bagekar",
-      "id": 3
+      "name": "Brown leaf",
+      "trooms": 180,
+      "arooms": 30,
+      "address": "Jalna",
+      "sDish": "Dal Bhat"
     },
     {
-      "phone": "7499269640",
-      "email": "bagekart@",
-      "username": "Tanaya",
-      "password": "tanaya",
-      "name": "tanaya bagekar",
-      "id": 4
+      "name": "Silver leaf",
+      "trooms": 150,
+      "arooms": 60,
+      "address": "Akola",
+      "sDish": "Pizza"
     },
     {
-      "date": "2000-12-31",
-      "phone": "7499269640",
-      "email": "tanayana@",
-      "username": "Tanaya",
-      "password": "tanaya",
-      "name": "tanaya tanaya",
-      "id": 5
+      "name": "hotel lotus",
+      "trooms": 350,
+      "arooms": 10,
+      "address": "mumbai",
+      "sDish": "Burger"
+    },
+    {
+      "name": "hotel rose",
+      "trooms": 250,
+      "arooms": 25,
+      "address": "Delhi",
+      "sDish": "momos"
+    },
+    {
+      "name": "Hotel Taj",
+      "trooms": 550,
+      "arooms": 180,
+      "address": "mumbai",
+      "sDish": "chai"
+    },
+    {
+      "name": "Rajput hotel",
+      "trooms": 150,
+      "arooms": 20,
+      "address": "Amaravati",
+      "sDish": "Dal Bati"
+    },
+    {
+      "name": "green valey",
+      "trooms": 350,
+      "arooms": 30,
+      "address": "Nanded",
+      "sDish": "Green Vegies"
+    },
+    {
+      "name": "Chinese hotel",
+      "trooms": 230,
+      "arooms": 18,
+      "address": "Pune",
+      "sDish": "chicken noodels"
+    },
+    {
+      "name": "hotel zazira",
+      "trooms": 900,
+      "arooms": 5,
+      "address": "thane",
+      "sDish": "Veg Biryani"
+    }
+  ],
+  "owners": [
+    {
+      "name": "Rahul Dawle",
+      "hotels": 8,
+      "location": "jalna",
+      "pnumber": 9881128200,
+      "hotel": [
+        {
+          "name": "The Luxury Collection Hotels & Resorts",
+          "trooms": 191,
+          "arooms": 28,
+          "address": "Mumbai",
+          "sDish": "Pakora"
+        },
+        {
+          "name": "Marriott",
+          "trooms": 90,
+          "arooms": 53,
+          "address": "Delhi",
+          "sDish": "Lamb vindaloo"
+        },
+        {
+          "name": "Regency Hotel",
+          "trooms": 95,
+          "arooms": 51,
+          "address": "Bangalore",
+          "sDish": "Fish curry"
+        },
+        {
+          "name": "Hilton Walt Disney World",
+          "trooms": 179,
+          "arooms": 8,
+          "address": "Hyderabad",
+          "sDish": "Crisp papadum"
+        },
+        {
+          "name": "Disney’s Wilderness Lodge",
+          "trooms": 180,
+          "arooms": 35,
+          "address": "Ahmedabad",
+          "sDish": "Chicken tikka masala"
+        },
+        {
+          "name": "Disney’s Yacht Club Resort",
+          "trooms": 231,
+          "arooms": 23,
+          "address": "Chennai",
+          "sDish": "Palak paneer"
+        },
+        {
+          "name": "Mandarin Oriental",
+          "trooms": 160,
+          "arooms": 39,
+          "address": "Kolkata",
+          "sDish": "Butter chicken"
+        },
+        {
+          "name": "Four Seasons Hotel",
+          "trooms": 129,
+          "arooms": 23,
+          "address": "Surat",
+          "sDish": "Aloo gobi"
+        }
+      ]
+    },
+    {
+      "name": "Tanaya Bagekar",
+      "hotels": 20,
+      "location": "Amaravati",
+      "pnumber": 9996656595,
+      "hotel": [
+        {
+          "name": "Moss View Hotel",
+          "trooms": 338,
+          "arooms": 21,
+          "address": "Ghaziabad",
+          "sDish": "Jalebi"
+        },
+        {
+          "name": "The Gritty Palace",
+          "trooms": 270,
+          "arooms": 16,
+          "address": "Vadodara",
+          "sDish": "Masala Chai"
+        },
+        {
+          "name": "Red Velvet Inn",
+          "trooms": 158,
+          "arooms": 45,
+          "address": "Patna",
+          "sDish": "Pindi Chana"
+        },
+        {
+          "name": "Sizzling Inn",
+          "trooms": 335,
+          "arooms": 20,
+          "address": "Pimpri and Chinchwad",
+          "sDish": "Bharwa Bhindi"
+        },
+        {
+          "name": "Bourbon Bliss",
+          "trooms": 252,
+          "arooms": 12,
+          "address": "Visakhapatnam",
+          "sDish": "Tandoor "
+        },
+        {
+          "name": "Hotel Happy Springs",
+          "trooms": 282,
+          "arooms": 13,
+          "address": "Bhopal",
+          "sDish": "Achaar"
+        },
+        {
+          "name": "Green Lushy Hotels",
+          "trooms": 298,
+          "arooms": 31,
+          "address": "Thane",
+          "sDish": "Chutneys"
+        },
+        {
+          "name": "Soft Petal Hotel",
+          "trooms": 198,
+          "arooms": 15,
+          "address": "Indore",
+          "sDish": "Raita"
+        },
+        {
+          "name": "Quick Stop Hotel",
+          "trooms": 347,
+          "arooms": 47,
+          "address": "Nagpur",
+          "sDish": "Ghee"
+        },
+        {
+          "name": "Palace Hotel",
+          "trooms": 183,
+          "arooms": 2,
+          "address": "Kanpur",
+          "sDish": "Fenugreek"
+        },
+        {
+          "name": "Sunset Plains Hotel",
+          "trooms": 158,
+          "arooms": 16,
+          "address": "Jaipur",
+          "sDish": "Turmeric"
+        },
+        {
+          "name": "Secluded Hill Hotel",
+          "trooms": 299,
+          "arooms": 21,
+          "address": "Pune",
+          "sDish": "Coriander"
+        },
+        {
+          "name": "Quirk Hotel",
+          "trooms": 180,
+          "arooms": 21,
+          "address": "Vasai Virar",
+          "sDish": "Cinnamon"
+        },
+        {
+          "name": "Blue Moon Hotel",
+          "trooms": 175,
+          "arooms": 29,
+          "address": "Kalyan and Dombivali",
+          "sDish": "Cardamom"
+        },
+        {
+          "name": "Whale Cave Inn",
+          "trooms": 120,
+          "arooms": 43,
+          "address": "Rajkot",
+          "sDish": "Cumin"
+        },
+        {
+          "name": "Hotel Jolly",
+          "trooms": 216,
+          "arooms": 2,
+          "address": "Meerut",
+          "sDish": "Mustard "
+        },
+        {
+          "name": "Bedrock N Roll",
+          "trooms": 198,
+          "arooms": 39,
+          "address": "Faridabad",
+          "sDish": "Kebab"
+        },
+        {
+          "name": "Suprema Lodge",
+          "trooms": 338,
+          "arooms": 45,
+          "address": "Nashik",
+          "sDish": "Biryani"
+        },
+        {
+          "name": "SpinSurf Hotel",
+          "trooms": 158,
+          "arooms": 20,
+          "address": "Agra",
+          "sDish": "Korma"
+        },
+        {
+          "name": "Fairview Hotel",
+          "trooms": 216,
+          "arooms": 21,
+          "address": "Ludhiana",
+          "sDish": "Kofta"
+        }
+      ]
+    },
+    {
+      "name": "Ajay Kharat",
+      "hotels": 12,
+      "location": "Rajur",
+      "pnumber": 8857822354,
+      "hotel": [
+        {
+          "name": "Ace Hotel",
+          "trooms": 220,
+          "arooms": 21,
+          "address": "puna",
+          "sDish": "chat"
+        },
+        {
+          "name": "Great Gravity Hotel",
+          "trooms": 221,
+          "arooms": 22,
+          "address": "Mumbai",
+          "sDish": "channa"
+        },
+        {
+          "name": "Your Tokyo Hotel",
+          "trooms": 220,
+          "arooms": 20,
+          "address": "Haidrabad",
+          "sDish": "Idali"
+        },
+        {
+          "name": "5 Star Getaway",
+          "trooms": 223,
+          "arooms": 24,
+          "address": "Thane",
+          "sDish": "Pav Bhaji"
+        },
+        {
+          "name": "Hotel Cirrus Shake",
+          "trooms": 220,
+          "arooms": 18,
+          "address": "Akola",
+          "sDish": "Khasta Puri"
+        },
+        {
+          "name": "Ube Hotel",
+          "trooms": 118,
+          "arooms": 21,
+          "address": "Nashik",
+          "sDish": "Badam Shek"
+        },
+        {
+          "name": "Going to Haven",
+          "trooms": 218,
+          "arooms": 25,
+          "address": "Shirdi",
+          "sDish": "Dhosa"
+        },
+        {
+          "name": "SleepyCrew Hub",
+          "trooms": 118,
+          "arooms": 51,
+          "address": "Nagpur",
+          "sDish": "Samosa"
+        },
+        {
+          "name": "Gotham Hotel",
+          "trooms": 140,
+          "arooms": 40,
+          "address": "Amaravati",
+          "sDish": "Misal"
+        },
+        {
+          "name": "Giggle Resort",
+          "trooms": 220,
+          "arooms": 30,
+          "address": "puna",
+          "sDish": "Kheer"
+        },
+        {
+          "name": "The Enchanted Garden",
+          "trooms": 220,
+          "arooms": 21,
+          "address": "Mumbai",
+          "sDish": "VadaPav"
+        },
+        {
+          "name": "Hotel Lemonade",
+          "trooms": 223,
+          "arooms": 81,
+          "address": "Nandel",
+          "sDish": "DalBati"
+        }
+      ]
+    },
+    {
+      "name": "Ashvini Bagekar",
+      "hotels": 25,
+      "location": "Delhi",
+      "pnumber": 9421320736,
+      "hotel": [
+        {
+          "name": "Hotel Joy Stick",
+          "trooms": 220,
+          "arooms": 60,
+          "address": "Malegav",
+          "sDish": "Dal Bhat"
+        },
+        {
+          "name": "Breeze Blows Hotel",
+          "trooms": 225,
+          "arooms": 213,
+          "address": "Rajastan",
+          "sDish": "Saraso Ka sag "
+        },
+        {
+          "name": "Wordly Traveller Hotel",
+          "trooms": 120,
+          "arooms": 61,
+          "address": "Solapur",
+          "sDish": "Misal"
+        },
+        {
+          "name": "Cable Car Hote",
+          "trooms": 490,
+          "arooms": 300,
+          "address": "Deharadoon",
+          "sDish": "Masala Pav"
+        },
+        {
+          "name": "Hotel Vitality",
+          "trooms": 300,
+          "arooms": 200,
+          "address": "Dahisar",
+          "sDish": "KandaBhaje"
+        },
+        {
+          "name": "Land’s End Resort",
+          "trooms": 450,
+          "arooms": 300,
+          "address": "Deharadoon",
+          "sDish": "Masala Pav"
+        },
+        {
+          "name": "Walkabout Beach Hotel",
+          "trooms": 490,
+          "arooms": 300,
+          "address": "Delhi",
+          "sDish": "Masala Pav"
+        },
+        {
+          "name": "Cable Car Hote",
+          "trooms": 490,
+          "arooms": 300,
+          "address": "Deharadoon",
+          "sDish": "Masala Pav"
+        },
+        {
+          "name": "Familiar Inn",
+          "trooms": 120,
+          "arooms": 21,
+          "address": "Naineetal",
+          "sDish": "Panir Masala"
+        },
+        {
+          "name": "Sun and Sand Hotel",
+          "trooms": 229,
+          "arooms": 40,
+          "address": "Thane",
+          "sDish": "Panir Butter Masala"
+        },
+        {
+          "name": "The Better Inn",
+          "trooms": 150,
+          "arooms": 21,
+          "address": "Kolhapur",
+          "sDish": "Gulab Jamun"
+        },
+        {
+          "name": "Big Dick’s Halfway Inn",
+          "trooms": 240,
+          "arooms": 61,
+          "address": "Mahad",
+          "sDish": "Khasta Puri"
+        },
+        {
+          "name": "Grand Gross Hotel",
+          "trooms": 420,
+          "arooms": 91,
+          "address": "Panjab",
+          "sDish": "Panir Masala"
+        },
+        {
+          "name": "Hotel Kuntz",
+          "trooms": 220,
+          "arooms": 21,
+          "address": "puna",
+          "sDish": "Aloo Tikki"
+        },
+        {
+          "name": "Elephant Butte Inn & Spa",
+          "trooms": 333,
+          "arooms": 71,
+          "address": "Chattisgadh",
+          "sDish": "Panir Tikka"
+        },
+        {
+          "name": "Farmer’s Daughter Hotel",
+          "trooms": 260,
+          "arooms": 21,
+          "address": "Raygadh",
+          "sDish": "Rumali Roti"
+        },
+        {
+          "name": "Dream Desert Hotel",
+          "trooms": 280,
+          "arooms": 40,
+          "address": "Amaravati",
+          "sDish": "Bajareki Roti"
+        },
+        {
+          "name": "Sandy Bloom",
+          "trooms": 240,
+          "arooms": 81,
+          "address": "Chandrapur",
+          "sDish": "Pav Bhaji"
+        },
+        {
+          "name": "The Glory Hotel",
+          "trooms": 230,
+          "arooms": 41,
+          "address": "Aasam",
+          "sDish": "Pedha"
+        },
+        {
+          "name": "Always Welcome",
+          "trooms": 160,
+          "arooms": 31,
+          "address": "Nandoor Bazar",
+          "sDish": "Pani Puri"
+        },
+        {
+          "name": "Country Charm Hotel",
+          "trooms": 430,
+          "arooms": 81,
+          "address": "Latoor",
+          "sDish": "Rasgoola"
+        },
+        {
+          "name": "Priority Hospitality",
+          "trooms": 130,
+          "arooms": 19,
+          "address": "Sahoor",
+          "sDish": "Jalaebi"
+        },
+        {
+          "name": "The Welcome Mat",
+          "trooms": 280,
+          "arooms": 30,
+          "address": "Shegav",
+          "sDish": "Kachori"
+        },
+        {
+          "name": "The Enchanted Garden",
+          "trooms": 140,
+          "arooms": 24,
+          "address": "Sihgadh",
+          "sDish": "Bharit"
+        },
+        {
+          "name": "Hotel Fusion",
+          "trooms": 260,
+          "arooms": 22,
+          "address": "Aurangabad",
+          "sDish": "Pthal"
+        }
+      ]
+    },
+    {
+      "name": "Shrushti Thakur",
+      "hotels": 10,
+      "location": "Pune",
+      "pnumber": 8257689943,
+      "hotel": [
+        {
+          "name": "ABAD Hotels",
+          "trooms": 300,
+          "arooms": 90,
+          "address": "Korhadi",
+          "sDish": "Kanda Bhaje"
+        },
+        {
+          "name": "French Lick Resort",
+          "trooms": 370,
+          "arooms": 60,
+          "address": "Satara",
+          "sDish": "Aloo Gobi"
+        },
+        {
+          "name": "Scandic Hell",
+          "trooms": 200,
+          "arooms": 50,
+          "address": "Sangali",
+          "sDish": "Panir Kofta"
+        },
+        {
+          "name": "Grand Oral Hotel",
+          "trooms": 190,
+          "arooms": 30,
+          "address": "Nandel",
+          "sDish": "Shahi Panir"
+        },
+        {
+          "name": "New Hangover Hotel",
+          "trooms": 280,
+          "arooms": 20,
+          "address": "Ahamadnagar",
+          "sDish": "Rice"
+        },
+        {
+          "name": "Porn Hotel",
+          "trooms": 490,
+          "arooms": 300,
+          "address": "Jejoori",
+          "sDish": "Panir Tikka"
+        },
+        {
+          "name": "Resist Bacteria Hotel",
+          "trooms": 150,
+          "arooms": 40,
+          "address": "Kolkatta",
+          "sDish": "Fride Rice"
+        },
+        {
+          "name": "Step Back Inn",
+          "trooms": 340,
+          "arooms": 60,
+          "address": "Amaravati",
+          "sDish": "Kachoori"
+        },
+        {
+          "name": "Baltic Bitch Hotel",
+          "trooms": 300,
+          "arooms": 80,
+          "address": "Yavatmal",
+          "sDish": "Manchoorian"
+        },
+        {
+          "name": "Terrible Hotel-Casino",
+          "trooms": 250,
+          "arooms": 30,
+          "address": "Chennai",
+          "sDish": "Uttapa"
+        }
+      ]
+    },
+    {
+      "name": "Rohit Kharat",
+      "hotels": 10,
+      "location": "Delhi",
+      "pnumber": 9657689854,
+      "hotel": [
+        {
+          "name": "Oceana Boutique Hotel",
+          "trooms": 147,
+          "arooms": 2,
+          "address": "Navi Mumbai",
+          "sDish": "Panjiri"
+        },
+        {
+          "name": "Bentley’s Boutique Hotel",
+          "trooms": 180,
+          "arooms": 8,
+          "address": "Allahabad",
+          "sDish": "Gond Ki Barfi"
+        },
+        {
+          "name": "Mayflower Boutique Hotel",
+          "trooms": 100,
+          "arooms": 10,
+          "address": "Haora",
+          "sDish": "Aloo Parantha"
+        },
+        {
+          "name": "Urban Boutique Hotel",
+          "trooms": 323,
+          "arooms": 6,
+          "address": "Ranchi",
+          "sDish": "Pooran Poli"
+        },
+        {
+          "name": "Chip Inn",
+          "trooms": 160,
+          "arooms": 11,
+          "address": "Gwalior",
+          "sDish": "Undhiyo"
+        },
+        {
+          "name": "Temptation Inn and Boutique",
+          "trooms": 209,
+          "arooms": 30,
+          "address": "Varanasi",
+          "sDish": "Coconut Crab Curry"
+        },
+        {
+          "name": "Cachet Boutique Hotel",
+          "trooms": 111,
+          "arooms": 20,
+          "address": "Srinagar",
+          "sDish": "Appam"
+        },
+        {
+          "name": "The Maxwell Hotel",
+          "trooms": 146,
+          "arooms": 15,
+          "address": "Aurangabad",
+          "sDish": "Aamras"
+        },
+        {
+          "name": "Ivy Boutique Hotel",
+          "trooms": 327,
+          "arooms": 4,
+          "address": "Dhanbad",
+          "sDish": "Guntur Idli"
+        },
+        {
+          "name": "La Sky Boutique Hotel",
+          "trooms": 142,
+          "arooms": 12,
+          "address": "Amritsar",
+          "sDish": "Ghewar"
+        }
+      ]
     }
   ]
 }
