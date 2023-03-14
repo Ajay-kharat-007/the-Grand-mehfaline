@@ -36,6 +36,31 @@
       "email": "kharatajay023@gmail.com",
       "username": "Ajay007",
       "password": "Ajey#123"
+    },
+    {
+      "phone": "7499269640",
+      "email": "bagekartanaya30@gmail.com",
+      "username": "Tanaya",
+      "password": "tanaya123",
+      "name": "tanaya bagekar",
+      "id": 3
+    },
+    {
+      "phone": "7499269640",
+      "email": "bagekart@",
+      "username": "Tanaya",
+      "password": "tanaya",
+      "name": "tanaya bagekar",
+      "id": 4
+    },
+    {
+      "date": "2000-12-31",
+      "phone": "7499269640",
+      "email": "tanayana@",
+      "username": "Tanaya",
+      "password": "tanaya",
+      "name": "tanaya tanaya",
+      "id": 5
     }
   ]
 }

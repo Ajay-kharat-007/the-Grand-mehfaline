@@ -4,19 +4,36 @@
     <form #SignupForm="ngForm" autocomplete="off" (ngSubmit)="getVal(SignupForm.value)">
         <div>
             First Name : 
-            <input type="text" name="fname" placeholder="First Name" ngModel>
+            <input type="text" name="fname" #fname='ngModel' placeholder="First Name" ngModel required>
+            <span class="validation" *ngIf="!fname.touched">Please Enter Your Name</span>
+          
         </div>
         <div>
             Last Name : 
-            <input type="text" name="lname" placeholder="Last Name" ngModel>
+            <input type="text" name="lname" #lname='ngModel' placeholder="Last Name" ngModel>
+            <span class="validation" *ngIf="!lname.touched">Please Enter Your Name</span>
+        </div>
+        <div >
+            Gender:
+            <input type="radio" name="gender" id="male" ngModel>Male
+            <input type="radio" name="gender" id="female" ngModel>Female
+        </div>
+        <div>
+            Date Of Birth:
+            <input type="date" name="date" id="date" ngModel>
         </div>
         <div>
             Mo Number : 
-            <input type="text" name="phone" placeholder="Phone Number" ngModel>
+            <input type="text" name="phone" #phone='ngModel' placeholder="Phone Number"  pattern="[7-9]{1}[0-9]{9}" maxlength="10" minlength="10" ngModel>
+            <span class="validation" *ngIf="phone.errors?.['pattern'] && phone.touched && !phone.errors?.['minlength'] ">Enter Valid pattern</span>
+            <span class="validation" *ngIf="phone.errors?.['minlength'] && phone.touched" >Enter Valid Mobile Number</span>
         </div>
+       
         <div>
             Email : 
-            <input type="text" name="email" placeholder="Email " ngModel>
+            <input type="text" name="email" placeholder="Email " #email='ngModel' ngModel pattern="[A-aZ-z]{8}[@]{1}" maxlength="20" >
+            <span class="validation" *ngIf="email.touched && !email.valid && email.errors?.['pattern'] && !email.errors?.['maxlength'] " >Enter Valid Email-Id</span>
+            <span class="validation" *ngIf="email.errors?.['maxlength'] && email.touched" >maxlength at least 20 characters</span>
         </div>
         <div>
             Username : 
@@ -24,7 +41,7 @@
         </div>
         <div>
             Password : 
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password" ngModel>
         </div>
         <div>
             Confirm Password : 

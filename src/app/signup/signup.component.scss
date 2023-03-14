@@ -64,7 +64,15 @@ input[type=reset] {
     width: 300px;
     margin-left: 15px;
 }
+input[type=radio]{
+    display: flex;
+    flex-direction: row;
+}
 
 input[type=reset]:hover {
     background-color: black;
 }  
+.validation{
+    color: red;
+    font-size: 18px;
+}
